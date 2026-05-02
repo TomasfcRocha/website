@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" >
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tomás Rocha | Software Developer</title>
+
+    <script>
+        document.documentElement.classList.remove('no-js');
+        document.documentElement.classList.add('js');
+    </script>
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+
+    <style>
+        /* --- VISIBILITY & LAYOUT FIXES --- */
+        
+        /* 1. Intro Section (Dark Background) */
+        .s-intro, .intro-content {
+            background-color: #000000 !important;
+        }
+        .intro-content__overline, 
+        .intro-content__big-type, 
+        .intro-content__desc,
+        .intro-content__desc strong {
+            color: #ffffff !important;
+        }
+
+        /* 2. Profile Section (Dark Background) */
+        #profile {
+            background-color: #0c0c0c !important;
+        }
+        #profile p, #profile span, #profile strong, 
+        #profile .lead, #profile .section-title, #profile .info-card__desc, #profile h5 {
+            color: #ffffff !important;
+            opacity: 1 !important;
+            visibility: visible !important;
+        }
+
+        /* 3. Projects Section (Light Background) */
+        #works {
+            background-color: #ffffff !important;
+        }
+        #works .section-title, #works .lead {
+            color: #000000 !important;
+        }
+
+        /* 4. Portfolio Item Image Fix */
+        .portfolio-item img {
+            width: 100% !important;
+            height: 200px !important;
+            object-fit: cover !important;
+            display: block;
+        }
+        .portfolio-item__title {
+            color: #000000 !important;
+            display: block;
+            padding: 15px 15px 5px;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        /* Skill Tag Styling */
+        .skill-tag {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 4px 12px;
+            border-radius: 4px;
+            margin-right: 8px;
+            margin-bottom: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        /* Professional Assets Link Color */
+        .asset-link {
+            color: #3498db !important;
+            text-decoration: underline;
+            transition: color 0.3s ease;
+        }
+        .asset-link:hover {
+            color: #ffffff !important;
+        }
+    </style>
+
+</head>
+
+<body id="top">
+    
+    <div id="preloader">
+        <div id="loader" class="dots-fade">
+            <div></div><div></div><div></div>
+        </div>
+    </div>
+
+    <div id="page" class="s-pagewrap is-home">
+
+        <header class="s-header">
+            <div class="container s-header__content">
+                <div class="s-header__block">
+                    <div class="header-brand">
+                        <a class="header-brand__link" href="index.html">
+                            <img class="header-brand__avatar" src="images/header-avatar.jpg" alt="Tomás Rocha">
+                            <span class="header-brand__text">Tomás Rocha</span>
+                        </a>
+                    </div>
+                    <a class="header-menu-toggle" href="#0"><span>Menu</span></a>
+                </div>
+            
+                <nav class="header-nav">    
+                    <ul class="header-nav__links">
+                        <li class="current"><a class="smoothscroll" href="#intro">Intro</a></li>
+                        <li><a class="smoothscroll" href="#profile">Profile</a></li>
+                        <li><a class="smoothscroll" href="#works">Projects</a></li>
+                        <li><a href="mailto:tomasfcrocha@gmail.com">Contact</a></li>
+                    </ul>               
+                </nav>         
+            </div>
+        </header>
+
+        <section id="intro" class="s-intro target-section">
+            <div class="container s-intro__inner">
+                <div class="row intro-content-wrap">  
+                    <div class="column xl-11 intro-content">
+                        <div class="intro-content__overline">Software Developer | Lisbon, Portugal</div>
+                        <h1 class="intro-content__big-type">Tomás Rocha</h1>
+                        <p class="intro-content__desc lead">
+                            Computer Science student at <strong>ULHT</strong>. 
+                        </p>
+                    </div>              
+                </div>
+            </div>   
+            <a class="intro-scroll smoothscroll" href="#profile">
+                <div class="intro-scroll__text">Scroll</div>
+                <div class="intro-scroll__line"></div>
+            </a>
+        </section>
+
+        <section id="profile" class="s-profile target-section">
+            <div id="profile-about" class="s-about">
+                <div class="s-about__inner container">
+                    <div class="grid-block">
+                        <div class="grid-block__item s-about__header">
+                            <h2 data-num="01" class="section-title">About Me</h2>
+                        </div>
+                        <div class="grid-block__item s-about__media">
+                            <figure class="about-profile-pic">
+                                <img src="images/profile-pic.jpg" alt="Tomás Rocha">
+                            </figure>
+                        </div>
+                        <div class="grid-block__item s-about__intro">
+                            <p class="lead">CS Student at ULHT in Lisbon.</p>
+                            <p><strong>Bilingual:</strong> Native Portuguese, Proficient English.</p>
+                        </div>
+                        <div class="grid-block__item s-about__main">
+                            <p><strong>Technical Toolkit:</strong><br>
+                            C, Python, Prolog, R, HTML, CSS, JS, and Git.</p>
+                            
+                            <p><strong>Behavioral Skills:</strong><br>
+                            <span class="skill-tag">Adaptability</span>
+                            <span class="skill-tag">Problem-solving</span>
+                            <span class="skill-tag">Teamwork</span>
+                            </p>
+
+                            <div class="available-block-wrap">
+                                <div class="available-block pulse">
+                                    <div class="dot"></div>
+                                    <span class="available-text">Available for Developer Roles</span>
+                                </div> 
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+            </div>   
+
+            <div id="profile-swot" class="s-profile-block container">
+                <div class="row s-profile-block__content">
+                    <div class="column xl-4 md-12 s-profile-block__content-start">
+                       <h2 data-num="02" class="section-title">SWOT Analysis</h2> 
+                    </div>
+                    <div class="column xl-8 md-12 s-profile-block__content-end">
+                        <div class="grid-cols info-list">
+                            <div class="grid-cols__column info-card">
+                                <h5 class="info-card__title" style="color: #2ecc71 !important;">Strengths</h5>
+                                <p class="info-card__desc">Multilingual communication, mastery of C and Python logic, Prolog-based AI reasoning, and data analysis in R.</p>
+                            </div>
+                            <div class="grid-cols__column info-card">
+                                <h5 class="info-card__title" style="color: #e74c3c !important;">Weaknesses</h5>
+                                <p class="info-card__desc">Building professional experience in large-scale enterprise microservices and cloud-native DevOps.</p>
+                            </div>
+                            <div class="grid-cols__column info-card">
+                                <h5 class="info-card__title" style="color: #3498db !important;">Opportunities</h5>
+                                <p class="info-card__desc">Applying CS academic foundations from ULHT to real-world industrial projects.</p>
+                            </div>
+                            <div class="grid-cols__column info-card">
+                                <h5 class="info-card__title" style="color: #f1c40f !important;">Threats</h5>
+                                <p class="info-card__desc">Rapid evolution of web technologies requiring constant adaptation of frontend and backend frameworks.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="profile-links" class="s-profile-block container">
+                <div class="row s-profile-block__content">
+                    <div class="column xl-4 md-12 s-profile-block__content-start">
+                       <h2 data-num="03" class="section-title">Professional Assets</h2> 
+                    </div>
+                    <div class="column xl-8 md-12 s-profile__content-end">
+                        <div class="grid-cols info-list">
+                            <div class="grid-cols__column info-card">
+                                <h5 class="info-card__title"><a href="assets/Resume.pdf" target="_blank" class="asset-link">Resume</a></h5>
+                            </div>
+                            <div class="grid-cols__column info-card">
+                                <h5 class="info-card__title"><a href="assets/CoverLetter.pdf" target="_blank" class="asset-link">Cover Letter</a></h5>
+                            </div>
+                            <div class="grid-cols__column info-card">
+                                <h5 class="info-card__title"><a href="https://www.linkedin.com/in/tom%C3%A1s-rocha-085949193/" target="_blank" class="asset-link">LinkedIn</a></h5>
+                            </div>
+                            <div class="grid-cols__column info-card">
+                                <h5 class="info-card__title"><a href="#0" target="_blank" class="asset-link">Video Introduction</a></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="works" class="s-works target-section">
+            <div class="container">               
+                <div class="row s-works__header">
+                    <div class="column xl-4 md-12 s-works__header-start">
+                        <h2 data-num="04" class="section-title">Projects</h2>
+                    </div>
+                    <div class="column xl-8 md-12 s-works__header-end">
+                        <p class="lead">Interactive applications.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container" style="display: flex; flex-wrap: wrap; gap: 30px; justify-content: center; padding-bottom: 80px;">
+                
+                <!-- Project: Chess -->
+                <div class="portfolio-item" style="flex: 1 1 300px; max-width: 380px; background: #f9f9f9; border-radius: 8px; overflow: hidden; border: 1px solid #ddd;">   
+                    <a href="https://tomasfcrocha.github.io/chess/" target="_blank">
+                        <img src="images/folio/chess.jpg" alt="Chess">
+                        <span class="portfolio-item__title">Chess Engine</span>
+                    </a>
+                    <div style="text-align: center; padding: 15px;">
+                        <a href="https://tomasfcrocha.github.io/chess/" target="_blank" style="color: #007bff; font-weight: bold; text-decoration: underline;">Play Live Game</a>
+                    </div>
+                </div>
+
+                <!-- Project: Space Invaders -->
+                <div class="portfolio-item" style="flex: 1 1 300px; max-width: 380px; background: #f9f9f9; border-radius: 8px; overflow: hidden; border: 1px solid #ddd;">   
+                    <a href="https://tomasfcrocha.github.io/space-invaders/" target="_blank">
+                        <img src="images/folio/space-invaders.jpg" alt="Space Invaders">
+                        <span class="portfolio-item__title">Space Invaders</span>
+                    </a>
+                    <div style="text-align: center; padding: 15px;">
+                        <a href="https://tomasfcrocha.github.io/space-invaders/" target="_blank" style="color: #007bff; font-weight: bold; text-decoration: underline;">Play Live Game</a>
+                    </div>
+                </div>   
+
+                <!-- Project: Tetris -->
+                <div class="portfolio-item" style="flex: 1 1 300px; max-width: 380px; background: #f9f9f9; border-radius: 8px; overflow: hidden; border: 1px solid #ddd;">   
+                    <a href="https://tomasfcrocha.github.io/tetris/" target="_blank">
+                        <img src="images/folio/tetris.jpg" alt="Tetris">
+                        <span class="portfolio-item__title">Tetris</span>
+                    </a>
+                    <div style="text-align: center; padding: 15px;">
+                        <a href="https://tomasfcrocha.github.io/tetris/" target="_blank" style="color: #007bff; font-weight: bold; text-decoration: underline;">Play Live Game</a>
+                    </div>
+                </div>
+
+                <!-- Project: Snake -->
+                <div class="portfolio-item" style="flex: 1 1 300px; max-width: 380px; background: #f9f9f9; border-radius: 8px; overflow: hidden; border: 1px solid #ddd;">   
+                    <a href="https://tomasfcrocha.github.io/snake-game/" target="_blank">
+                        <img src="images/folio/snake.jpg" alt="Snake">
+                        <span class="portfolio-item__title">Snake Game</span>
+                    </a>
+                    <div style="text-align: center; padding: 15px;">
+                        <a href="https://tomasfcrocha.github.io/snake-game/" target="_blank" style="color: #007bff; font-weight: bold; text-decoration: underline;">Play Live Game</a>
+                    </div>
+                </div>
+
+                <!-- Project: Pong -->
+                <div class="portfolio-item" style="flex: 1 1 300px; max-width: 380px; background: #f9f9f9; border-radius: 8px; overflow: hidden; border: 1px solid #ddd;">   
+                    <a href="https://tomasfcrocha.github.io/pong/" target="_blank">
+                        <img src="images/folio/pong.jpg" alt="Pong">
+                        <span class="portfolio-item__title">Pong</span>
+                    </a>
+                    <div style="text-align: center; padding: 15px;">
+                        <a href="https://tomasfcrocha.github.io/pong/" target="_blank" style="color: #007bff; font-weight: bold; text-decoration: underline;">Play Live Game</a>
+                    </div>
+                </div>
+
+                <!-- Project: Flappy -->
+                <div class="portfolio-item" style="flex: 1 1 300px; max-width: 380px; background: #f9f9f9; border-radius: 8px; overflow: hidden; border: 1px solid #ddd;">   
+                    <a href="https://tomasfcrocha.github.io/flappy/" target="_blank">
+                        <img src="images/folio/flappy.jpg" alt="Flappy Bird">
+                        <span class="portfolio-item__title">Flappy Clone</span>
+                    </a>
+                    <div style="text-align: center; padding: 15px;">
+                        <a href="https://tomasfcrocha.github.io/flappy/" target="_blank" style="color: #007bff; font-weight: bold; text-decoration: underline;">Play Live Game</a>
+                    </div>
+                </div>
+
+            </div>             
+        </section>
+
+        <footer id="footer" class="container s-footer">  
+            <div class="row s-footer__top">
+                <div class="column xl-6 md-12 s-footer__top-start">
+                    <h5 class="footer-overline">Contact Me</h5>
+                    <p class="lead">Lisbon, Portugal | Bilingual (PT/EN)</p>
+                    <div class="footer-buttons">
+                        <a href="tel:+351960315366" class="btn">Call: +351 960 315 366</a>
+                        <a href="mailto:tomasfcrocha@gmail.com" class="btn">Send Email</a>
+                    </div>
+                </div>
+
+                <div class="grid-cols column xl-3 lg-4 md-12 s-footer__top-end">
+                    <div class="footer-block grid-cols__column">
+                        <h5 class="footer-title">Links</h5>
+                        <ul class="link-list">
+                            <li><a href="https://github.com/TomasfcRocha">GitHub</a></li>
+                            <li><a href="https://www.linkedin.com/in/tom%C3%A1s-rocha-085949193/">LinkedIn</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
